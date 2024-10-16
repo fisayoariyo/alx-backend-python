@@ -5,7 +5,7 @@
 
 import asyncio
 import random
-import generator
+from typing import generator
 
 async def async_generator():
     """Coroutine that generates random numbers between 0 and 10, one number
@@ -14,7 +14,7 @@ async def async_generator():
     Yields: 
     """
     -> Generator[float, None, None]:  
-    """ A random number between 0 and 10.
+    """ A random number, that is  between 0 and 10.
     """
     for _ in range(10):
         await asyncio.sleep(1)
