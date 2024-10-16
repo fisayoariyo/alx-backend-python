@@ -13,7 +13,8 @@ async def async_generator():
 
     Yields: 
     """
-    -> Generator[float, None, None]:  
+    -> 
+    Generator[float, None, None]:  
     """ A random number, that is  between 0 and 10.
     """
     for _ in range(10):
